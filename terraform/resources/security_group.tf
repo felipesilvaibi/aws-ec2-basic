@@ -1,4 +1,4 @@
-resource "aws_security_group" "instance" {
+resource "aws_security_group" "security_group" {
   name        = "allow_ssh_http"
   description = "Permite acesso SSH e HTTP"
 
@@ -22,8 +22,4 @@ resource "aws_security_group" "instance" {
     protocol    = "-1"
     cidr_blocks = ["0.0.0.0/0"]
   }
-}
-
-output "security_group_id" {
-  value = aws_security_group.instance.id
 }
