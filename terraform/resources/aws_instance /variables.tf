@@ -1,8 +1,3 @@
-variable "aws_region" {
-  description = "The AWS region to deploy the infrastructure"
-  default     = "us-east-1"
-}
-
 variable "instance_type" {
   description = "Type of instance to be created"
   default     = "t2.micro"
